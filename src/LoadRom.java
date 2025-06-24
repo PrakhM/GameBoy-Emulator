@@ -15,7 +15,7 @@ public class LoadRom
         if(fileData != null)
         {
             Memory mem = new Memory();
-            int adr = 0x150;
+            int adr = 0;
             for (byte b : fileData)
             {
                 if(adr > 0x8000 - 1)

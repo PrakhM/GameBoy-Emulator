@@ -9,6 +9,6 @@ public class Memory
     public void initializeMemory(byte b, int adr)
     {
         memory[adr] = (short)(b & 0xFF); //java byte converts 0xFF to -1;
-        System.out.printf("%x\n", (b & 0xFF));
+        System.out.printf("%x --> %x\n", adr, (b & 0xFF));
     }
 }
